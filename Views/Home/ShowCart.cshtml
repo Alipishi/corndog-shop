@@ -1,0 +1,52 @@
+﻿@model Order
+@{
+    ViewData["Title"] = "سبد غذا";
+}
+
+@if (Model != null)
+{
+    <table class="table table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>نام</th>
+                <th>تعداد</th>
+                <th>قیمت</th>
+                <th></th>
+
+            </tr>
+
+        </thead>
+
+        <tbody class="text-center">
+            @foreach (var item in Model.OrderDetail)
+            {
+                <tr>
+                    <td>@item.Product.Name</td>
+                    <td>@item.Quantity</td>
+                    <td>@(item.Quantity * item.Price)</td>
+                    <td>
+                        <a asp-action="RemoveFromCart"
+                           asp-controller="Home"
+                           asp-route-DetailId="@item.DetailId"
+                           class="btn btn-danger">حذف</a>
+                    </td>
+
+                </tr>
+            }
+
+        </tbody>
+
+
+    </table>
+
+    <h5>جمع کل : @Model.OrderDetail.Sum(s => s.Quantity * s.Price)</h5>
+    <p>
+        <a class="btn btn-secondary" href="#" onclick="return false;" style="color: black; pointer-events: none;">پرداخت | متوقف شده</a>
+    </p>
+    <a href="/home" class="btn btn-primary">بازگشت به صفحه</a>
+}
+else
+{
+    <div>فاکتوری نیست</div>
+}
+

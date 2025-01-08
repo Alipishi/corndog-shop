@@ -1,0 +1,15 @@
+﻿@using HelmonyCornDog.Data.Repositories
+@inject IGroupRepository _GroupRepository
+
+
+<div class="dropdown">
+    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        گروه ها
+    </button>
+    <ul class="dropdown-menu">
+        @foreach (var item in _GroupRepository.GetAllCategories())
+        {
+            <li><a class="dropdown-item" href="/Group/@item.Id/@item.Name">@item.Name</a></li>
+        }
+    </ul>
+</div>

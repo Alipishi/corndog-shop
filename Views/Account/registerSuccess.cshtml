@@ -1,0 +1,22 @@
+﻿@model RegisterViewModel
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel" style="color:seagreen">موفقیت ثبت نام🍕🍡</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ثبت نام با موفقیت انجام شد.
+                <p>@Model.Name به کورن داگ فروشی ما خوش آمدید.</p>
+                برای ورود به سایت از دکمه ورود به سایت استفاده کنید
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">فهمیدم</button>
+                <a asp-action="Login" asp-controller="Account" class="btn btn-success">ورود به سایت</a>
+            </div>
+        </div>
+    </div>
+</div>

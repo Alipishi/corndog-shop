@@ -1,0 +1,113 @@
+﻿@model DetailsVeiwModel
+@{
+    ViewData["Title"] = Model.Product.Name;
+    var imagePath = ViewData["ImagePath"] as string;
+}
+<div class="">
+    <div class="row">
+        <div class="col-md-4 col-xl-4 col-lg-4 col-sm-12 col-xs-12 d-flex justify-content-md-end justify-content-center">
+            <div class="box-image">
+                <img class="img-fluid  image-box" src="@imagePath" alt="@Model.Product.Name" />
+            </div>
+        </div>
+        <div class="col-md-8 col-xl-8 col-lg-8 col-sm-12 col-xs-12" style="margin-top:10px">
+            <h1 class="text-h4 text-neutral-900 mb-2">@Model.Product.Name</h1>
+            <hr class="bg-gradient" />
+            <h5><b>مشخصات</b></h5>
+            <div class="underlinespecial mt-2"></div>
+            <div class="specif">
+                <p class="specifications">وزن</p>
+                <div class="spcificpart2">
+                    <p class="specificpar2_5">@Model.Product.Specifications.weight</p>
+                </div>
+            </div>
+            <div class="specif">
+                <p class="specifications">ترکیبات</p>
+                <div class="spcificpart2">
+                    <p class="specificpar2_5">@Model.Product.Specifications.Combinations</p>
+                </div>
+            </div>
+            <div class="specif">
+                <p class="specifications">زمان پخت</p>
+                <div class="spcificpart2">
+                    <p class="specificpar2_5">@Model.Product.Specifications.cookTime</p>
+                </div>
+            </div>
+            <div class="specif">
+                <p class="specifications">سایر توضیحات</p>
+                <div class="spcificpart2">
+                    <p class="specificpar2_5">@Model.Product.Specifications.Otherexplanations</p>
+                </div>
+            </div>
+        </div>
+        <div class="paddingtop30">
+            <h5><b>توضیحات</b></h5>
+            <div class="underlinespecial mt-2"></div>
+            <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded margintop20">
+                <p class="py-2" style="text-align:justify;cursor:default;">@Model.Product.Description</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section CustomBoxSection {
+    <div>
+        <div class="elegant-box" style="max-width:500px">
+            <div>
+                <p class="boxtitle">فروشگاه کورن داگ</p>
+                <div>
+                    <h6 class="boxextra opacity-75">سریع و به موقع</h6>
+                    <h6 class="boxextra opacity-75">خوشمزه ولذیذ</h6>
+                    <h6 class="boxextra opacity-75">تهیه شده از بهترین مواد های اولیه</h6>
+                </div>
+            </div>
+            <div class="margintop20"><p class="text-body-secondary" style="cursor:default;">ارسال رایگان در محدوده تهران</p></div>
+            <hr />
+            @if (Model.Product.Item.QuantityInStock == 0)
+            {
+                <span class="opacity-50">ناموجود</span>
+            }
+            else if (Model.Product.Item.QuantityInStock <= 6)
+            {
+                <span class="Quantity">@Model.Product.Item.QuantityInStock عدد باقی مانده</span>
+            }
+            
+            
+
+            <span class="money2">
+                <span class="toman"> تومان </span>
+                @Model.Product.Item.Price
+            </span>
+            
+            
+
+            @if (Model.Product.Item.QuantityInStock >= 1)
+            {
+                <div>
+                    <a asp-action="AddToCart"
+                       asp-controller="Home"
+                       asp-route-itemid="@Model.Product.ItemId"
+                       class="btn btn-success full-width">افزودن به سبد خرید</a>
+                </div>
+            }
+            else if (Model.Product.Item.QuantityInStock == 0)
+            {
+                <div>
+                    <a class="btn full-width btn-secondary" href="#" onclick="return false;" style="color: black; pointer-events: none;">ناموجود</a>
+                </div>
+            }
+            
+
+        </div>
+    </div>
+}
+
+@section ProductGroupsSection {
+    <div style="max-width:400px;">
+        <h5><b>گروه ها</b></h5>
+        <div class="underlinespecial mt-2"></div>
+        <div class="margintop20">
+            @await Component.InvokeAsync("ProductGroupsComponent")
+        </div>
+    </div>
+}

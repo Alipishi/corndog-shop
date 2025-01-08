@@ -1,0 +1,14 @@
+﻿@model HelmonyCornDog.Models.Product
+
+<div class="col-md-3 col-sm-6 col-6" style="padding-top:10px">
+    <a asp-action="Detail"
+       asp-controller="Home"
+       asp-route-id="@Model.Id"
+       class="card border-warning no-underline hover-card">
+        <img src="@Model.ImagePath" class="card-img-top img-thumbnail img-fluid responsive-card-img" alt="@Model.Name">
+        <div class="card-body">
+            <h5 class="card-title">@Model.Name</h5>
+            <b class="card-text">@Model.Item.Price</b>
+        </div>
+    </a>
+</div>

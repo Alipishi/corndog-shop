@@ -1,0 +1,501 @@
+﻿html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.site-container {
+    padding: 12px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 775px) {
+    .responsive-img {
+        width: 50%; /* Adjust this as needed */
+    }
+}
+
+.responsive-card-img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 775px) {
+    .responsive-card-img {
+        max-width: 75%; /* Adjust as needed */
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+a.no-underline {
+    text-decoration: none; /* No underline */
+    color: inherit; /* Original color */
+}
+
+    a.no-underline:hover {
+        text-decoration: none; /* No underline on hover */
+    }
+
+.paddingtop20 {
+    padding-block: 50px;
+}
+
+
+.paddingtop10 {
+    margin-top: 10px;
+}
+
+.paddingtop5 {
+    margin-top: 5px;
+}
+
+.paddingtop30 {
+    padding-top: 30px;
+}
+
+.margintop20 {
+    margin-top: 20px;
+}
+
+.margin10 {
+    margin: 10px;
+}
+
+.footertextprivacy {
+    text-align: center;
+    text-size-adjust: 100%;
+    width: 1240px;
+    display: block;
+    line-height: 25px;
+    font-size: 13px;
+    margin-block-end: 22px;
+    margin-block-start: 22px;
+    margin-bottom: 22px;
+    box-sizing: border-box;
+    unicode-bidi: isolate;
+    word-spacing: -1px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    margin-left: 0px;
+}
+
+
+.underlinespecial {
+    cursor: default;
+    background-color: rgb(2, 154, 73);
+    box-sizing: border-box;
+    direction: rtl;
+    display: block;
+    font-family: Vazirmatn, tahoma;
+    font-size: 10px;
+    height: 2px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 8px;
+    outline-color: rgb(0, 0, 0);
+    outline-style: none;
+    outline-width: 0px;
+    overflow-wrap: break-word;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    unicode-bidi: isolate;
+    width: 80px;
+}
+
+.specifications {
+    box-sizing: border-box;
+    color: rgb(129, 133, 139);
+    direction: rtl;
+    display: block;
+    flex-shrink: 0;
+    font-family: Vazirmatn, tahoma;
+    font-size: 15px;
+    font-weight: 400;
+    height: 54.8182px;
+    line-height: 30.1px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-bottom: 0px;
+    margin-inline-end: 16px;
+    margin-inline-start: 0px;
+    margin-left: 16px;
+    margin-right: 0px;
+    margin-top: 0px;
+    outline-color: rgb(129, 133, 139);
+    outline-style: none;
+    outline-width: 0px;
+    padding-bottom: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 12px;
+    unicode-bidi: isolate;
+    width: 144px;
+    cursor: default;
+}
+
+.specif {
+    box-sizing: border-box;
+    direction: rtl;
+    display: flex;
+    font-family: Vazirmatn, tahoma;
+    font-size: 10px;
+    height: 54.8182px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    outline-color: rgb(0, 0, 0);
+    outline-style: none;
+    outline-width: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    unicode-bidi: isolate;
+    width: 100%;
+    cursor: default;
+}
+
+.spcificpart2 {
+    border-bottom-color: rgb(240, 240, 241);
+    border-bottom-style: solid;
+    border-bottom-width: 0.727273px;
+    max-width: 100%;
+    box-sizing: border-box;
+    direction: rtl;
+    display: block;
+    flex-grow: 1;
+    font-family: Vazirmatn, tahoma;
+    font-size: 10px;
+    height: 54.8182px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    outline-color: rgb(0, 0, 0);
+    outline-style: none;
+    outline-width: 0px;
+    padding-bottom: 12px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 12px;
+    unicode-bidi: isolate;
+    width: 820.364px;
+    cursor: default;
+}
+
+.specificpar2_5 {
+    align-items: center;
+    box-sizing: border-box;
+    color: rgb(12, 12, 12);
+    direction: rtl;
+    display: flex;
+    font-family: Vazirmatn, tahoma;
+    font-size: 15px;
+    font-weight: 400;
+    height: 30.0909px;
+    line-height: 30.1px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-bottom: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    outline-color: rgb(12, 12, 12);
+    outline-style: none;
+    outline-width: 0px;
+    overflow-wrap: break-word;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    unicode-bidi: isolate;
+    width: 100%;
+    cursor: default;
+}
+
+
+
+.money {
+    align-items: center;
+    box-sizing: border-box;
+    color: rgb(13, 12, 34);
+    cursor: default;
+    direction: rtl;
+    display: flex;
+    font-family: Dana, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    text-align: right;
+    text-size-adjust: 100%;
+    width: 88.6px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-size-adjust: 100%;
+}
+
+.toman {
+    font-size: 16px;
+    font-weight: 400;
+    cursor: default;
+    text-align: left;
+    text-size-adjust: 100%;
+    float: left;
+    padding-right: 2px;
+}
+
+
+.money2 {
+    font-family: Vazirmatn, tahoma;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: default;
+    text-size-adjust: 100%;
+    float: left;
+}
+
+.Quantity {
+    color: salmon;
+    font-family: Vazirmatn, tahoma;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    cursor: default;
+    text-size-adjust: 100%;
+    float: right;
+
+}
+
+.full-width {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.classic-box {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #f8f9fa;
+    transition: transform 0.2s;
+}
+
+    .classic-box:hover {
+        transform: scale(1.05);
+    }
+
+.elegant-box {
+    border: 2px solid #dee2e6;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+    .elegant-box:hover {
+        transform: scale(1.05);
+    }
+
+.boxtitle {
+    color: indianred;
+    cursor: default;
+}
+
+.boxextra {
+    font-size: 12px;
+    transition: transform 0.1s;
+    cursor: default;
+}
+    .boxextra:hover {
+        color: darkgreen;
+        cursor: default;
+    }
+
+
+.imageAdmin{
+    max-width:100px;
+}
+
+.center-text {
+    text-align: center; /* Horizontal alignment */
+    vertical-align: middle; /* Vertical alignment */
+    height: 100px; /* Example height, adjust as needed */
+}
+
+.cursordefualt {
+    cursor:default;
+}
+
+.box-image {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.image-box {
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px  white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: white;
+    padding: 0px;
+}
+
+    .image-box img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+/* Media Query for md and above */
+@media (min-width: 768px) {
+    .image-box {
+        width: 100%;
+
+    }
+}
+
+
+.imageEdit {
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: white;
+    padding: 0px;
+}
+
+
+
+
+.custom-sm-btn {
+    position: absolute;
+    left: 0;
+    margin-left: 15px; /* Optional: Adjust margin as needed */
+}
+
+
+
+/* Add a base transition effect to the card */
+.hover-card {
+    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
+}
+
+/* Define the hover effect for the card, applying it on md screens and above */
+@media (min-width: 768px) {
+    .hover-card:hover {
+        transform: translateY(-10px) scale(1.07) rotate(-2deg); /* Lift, scale, and slight rotation */
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Adds a more pronounced shadow effect */
+        background-color: #f1f1f1; /* Subtle background color change */
+    }
+
+        /* Hover effect for the image */
+        .hover-card:hover img {
+            transform: scale(1.1); /* Scales up the image slightly */
+            filter: brightness(1.2); /* Increases the brightness of the image */
+        }
+
+        /* Hover effect for the card title */
+        .hover-card:hover .card-title {
+            color: #ff5722; /* Changes the color of the title on hover */
+            transition: color 0.5s ease; /* Smooth color transition */
+        }
+
+        /* Hover effect for the card text */
+        .hover-card:hover .card-text {
+            color: #343a40; /* Changes the color of the text on hover */
+            transition: color 0.5s ease; /* Smooth color transition */
+        }
+}
+
+
+
+
+
+/* Add a base transition effect to the custom card */
+.custom-hover-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+}
+
+    /* Define the hover effect for the custom card */
+    .custom-hover-card:hover {
+        transform: translateY(-10px) scale(1.05); /* Slight lift and scale effect */
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Adds a more pronounced shadow effect */
+        background-color: #f9f9f9; /* Changes the background color */
+    }
+
+        /* Add a hover effect for the custom card header */
+        .custom-hover-card:hover .card-header {
+            background-color: #ff5722; /* Changes the background color of the header */
+            color: #fff; /* Changes the text color of the header */
+            transition: background-color 0.4s ease, color 0.4s ease; /* Smooth color transition */
+        }
+
+        /* Add a hover effect for the custom card title */
+        .custom-hover-card:hover .card-title {
+            color: #ff5722; /* Changes the color of the title on hover */
+            transition: color 0.4s ease; /* Smooth color transition */
+        }
+
+        /* Add a hover effect for the custom card text */
+        .custom-hover-card:hover .card-text b {
+            color: #007bff; /* Changes the color of the bold text on hover */
+            transition: color 0.4s ease; /* Smooth color transition */
+        }
